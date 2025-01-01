@@ -1,0 +1,17 @@
+Simulación topologías de red
+Como hemos podido ver hay una buena cantidad diferente de topologías de red a la hora de
+montar una conexión entre diferentes equipos. En esta actividad vamos a intentar emular
+diferentes topologías de red y ver qué es lo que ocurre cuando se produce algún fallo entre las
+conexiones.
+PARTE 1:
+Con el packet tracer, realizar las siguientes topologías de red:
+PARTE 2:
+- Asignar IPs estáticas a cada uno de los equipos partiendo de la 192.168.0.1.
+- Realizar un ping entre diferentes terminales para comprobar su correcta conexión.
+- Describir que ocurre con la conexión cuando se produce un corte en la red.
+La entrega de esta tarea se realizará vía Moodle y mediante un archivo comprimido que
+contenga la red hecha en packet tracer (.pkt) y un archivo pdf con los pasos seguidos y
+con el siguiente formato de nombre:
+Actividad2_Nombre_Apellido1_Apellido2.rar
+Ejemplo:
+Actividad2_Hadriel_Fernando_Quintero_Ceballos.rar
