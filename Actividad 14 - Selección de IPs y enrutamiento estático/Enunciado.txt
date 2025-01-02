@@ -1,0 +1,7 @@
+ACTIVIDAD 14
+Selección de IPs y enrutamiento estático
+Se pretende montar una instalación de red con la siguiente topología:
+Se pide:
+- Elegir la IP que mejor se adapte a las circunstancias de forma que se desperdicien la menor
+cantidad de IPs utilizando una máscara adaptada.
+- Dentro de la red (OFICINA 1), si es posible, añadir otra red para añadir 10 hosts.
