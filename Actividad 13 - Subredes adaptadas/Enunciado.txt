@@ -1,0 +1,69 @@
+Subredes adaptadas
+Hasta la fecha conocemos 3 tipos de IP según la cantidad de hosts que necesitemos.
+Usando una IP de tipo C tenemos 1 byte (8 bits) para el host, no obstante, tiene la pega de que
+se nos generan 255 posibles host. Si necesitamos una red más pequeña, 20 o 50 puestos puede
+resultar un problema. Es por ello que existen las subredes adaptadas en las que podemos
+tomar prestados algunos bits del host y dejarlos para la red.
+En esta actividad jugaremos con ese concepto definiendo las siguientes subredes:
+1- Se necesitan 14 subredes útiles y cada una con 14 host. La dirección de partida es la
+192.10.10.0:
+Clase de la IP original
+Máscara de Subred (por defecto)
+Máscara de Subred (Adaptada)
+Número total de subredes
+Número de subredes útiles
+Número total de direcciones de host
+Número de direcciones útiles
+Número de bits corregidos
+2- Se necesitan 1000 subredes útiles y cada una con 60 host. La dirección de partida es la
+165.100.0.0:
+Clase de la IP original
+Máscara de Subred (por defecto)
+Máscara de Subred (adaptada)
+Número total de subredes
+Número de subredes útiles
+Número total de direcciones de host
+Número de direcciones útiles
+Número de bits corregidos
+3- Dada la siguiente dirección IP 148.75.0.0/26 y su correspondiente máscara completa la
+tabla:
+Clase de la IP original
+Máscara de Subred (por defecto)
+Máscara de Subred (adaptada)
+Número total de subredes
+Número de subredes útiles
+Número total de direcciones de host
+Número de direcciones útiles
+Número de bits corregidos
+4- Se necesitan 6 subredes útiles y cada una con 30 host. La dirección de partida es la
+210.100.56.0:
+Clase de la IP original
+Máscara de Subred (por defecto)
+Máscara de Subred (adaptada)
+Número total de subredes
+Número de subredes útiles
+Número total de direcciones de host
+Número de direcciones útiles
+Número de bits corregidos
+5- Se necesitan 126 subredes con 131.070 host partiendo de la siguiente dirección de red
+118.0.0.0:
+Clase de la IP original
+Máscara de Subred (por defecto)
+Máscara de Subred (adaptada)
+Número total de subredes
+Número de subredes útiles
+Número total de direcciones de host
+Número de direcciones útiles
+Número de bits corregidos
+6- Desde el enunciado 1 indique los rangos de valores de las diferentes subredes creadas, es
+decir, para cada una de las diferentes subredes indica la última y la primera IP asignable
+(sabiendo que la 0 es la red y la última es la difusión).
+NOTA 1: Recuerda que siempre hay que restar 2 al número de IPs y el resultado es la cantidad
+de IPs válidas asignables a los hosts.
+NOTA 2: Decimos IPs útiles a aquellas que podemos asignar a un host dentro de una
+determinada red.
+La entrega de esta tarea se realizará vía Moodle y mediante un documento en pdf con
+las respuestas y con el siguiente formato de nombre:
+Actividad13_Nombre_Apellido1_Apellido2.pdf
+Ejemplo:
+Actividad13_Hadriel_Fernando_Quintero_Ceballos.pdf
