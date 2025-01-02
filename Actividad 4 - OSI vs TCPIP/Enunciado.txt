@@ -1,0 +1,10 @@
+ACTIVIDAD 4
+OSI vs TCP/IP
+En esta actividad vamos a intentar entender algunos conceptos básicos de los dos modelos
+básicos que dominan internet (OSI y TCP/IP), para ello vamos a buscar información sobre cada
+uno de ellos. Nos permitirá comprender mejor cómo funciona hoy día internet y en cierta
+manera nos obliga a leernos y repasar algunos conceptos básicos que debemos conocer.
+1- Completar un esquema en el que se expliquen cada una de las capas de cada modelo. Qué
+es y para qué sirve.
+2- Completar un diagrama en el que se expliquen las equivalencias entre las diferentes capas.
+3- Explicar las desventajas y ventajas de cada modelo.
