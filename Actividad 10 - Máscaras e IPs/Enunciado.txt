@@ -1,0 +1,14 @@
+Máscaras e IPs
+Como hemos estado viendo, las IPs son conjuntos numéricos binarios sobre las cuales se aplica
+la operación AND con la máscara y de ahí obtenemos la red. La red no es más que la IP 0.
+En esta actividad partimos de una serie de direcciones IP y con la máscara deberemos sacar la
+red a la cual pertenece, así como el tipo de IP que es (A, B o C) y la cantidad de equipos que la
+red permitiría tener.
+1- Completar la siguiente tabla de direcciones IP
+
+2- En el propio equipo en el que estás, lanza el propio terminal y ejecuta el comando
+ipconfig. Mírala IP que tienes asignada e indica:
+- La IP en binario.
+- La máscara utilizada.
+- ¿De qué tipo es la IP? ¿Por qué?
+- ¿Cuántos hosts permite la IP que tienes?
