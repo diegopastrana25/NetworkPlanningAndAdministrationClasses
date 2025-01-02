@@ -1,0 +1,17 @@
+ACTIVIDAD 11
+División de redes
+Las redes de ordenadores pueden subdividirse simplemente indicando las IPs que queremos
+utilizar dentro de cada zona. Así pues, un grupo de equipos conectados entre sí con un tipo de
+IP puede quedar comunicados mientras que otro con otro grupo de Ips queda separado y
+comunicado entre sí
+Siguiendo el siguiente esquema lógico:
+Los PCs 1, 2 y 3 están dentro de la red: 192.168.0.0.
+Los PCs 4, 5 y 6 están dentro de la red: 192.168.1.0.
+La máscara (/24) nos indica cual es la porción necesaria para cada parte (Red y Host).
+Se pide:
+1- Implementar la red anterior como se corresponde dándole IPs dentro de la red a cada uno
+de los equipos y verificando la correcta conexión de los mismos.
+2- Modificar la red añadiendo 2 redes más, independientes a las anteriores, con 100 puestos
+cada una. Implementar este cambio sobre la red que tenemos hecha.
+3- Añadir una red más, con 400 equipos independiente del esquema anterior. Añade esta
+última red al esquema eligiendo la IP de red que mejor encaje con lo que necesitamos.
