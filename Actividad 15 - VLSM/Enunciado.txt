@@ -1,0 +1,8 @@
+ACTIVIDAD 15
+VLSM
+Dada la red 192.168.0.0 desarrolle un esquema de direccionamiento, usando VLSM (Variable
+Lenght Subnet Mask), que cumpla con los siguientes requerimientos:
+- 1 subred de 20 hosts para ser asignada a una VLAN llamada Profesores.
+- 1 subred de 80 hosts para ser asignada a una VLAN llamada Estudiantes.
+- 1 subred de 20 hosts para ser asignada a una VLAN llamada Invitados.
+- 3 subredes de 2 hosts para ser asignada a los enlaces entre enrutadores.
