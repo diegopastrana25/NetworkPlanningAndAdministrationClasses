@@ -1,0 +1,17 @@
+ACTIVIDAD 7
+Puntos de acceso wifi
+En esta actividad vamos a ver los principales elementos a configurar en una red wifi
+para que crear la conexión con el equipo. Para ello vamos a seguir este tutorial en el
+que nos vienen explicados los pasos a seguir dentro del simulador que es el packet
+tracer.
+Una vez hayamos visto cómo podemos conectar un equipo a un punto de acceso wifi
+(AP) vamos a realizar la siguiente conexión entre equipos:
+De forma que ambos equipos se puedan ver y lanzar ping entre sí. Si nos fijamos en el
+cuadro de configuración del punto de acceso, tenemos un menú tal cual se ve a
+continuación:
+A parte de hacer la configuración, en esta actividad vamos a describir los campos que vemos
+subrayados en amarillo ya que son los principales elementos a configurar de un punto de
+acceso wifi. Prestaremos especial atención al tema de la autentificación.
+
+
+http://rdesmr.blogspot.com/2013/03/configuracion-wifi-en-packet-tracer.html
