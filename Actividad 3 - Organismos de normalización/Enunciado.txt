@@ -1,0 +1,19 @@
+ACTIVIDAD 3
+Organismos de normalización
+En esta actividad vamos a informarnos de los diferentes Organismos de Normalización y de
+qué es lo que hacen. Buscaremos información sobre cada uno de ellos y mostraremos algunos
+ejemplos de los estándares que han creado y que hoy día seguimos.
+- ITU (International Telecommunication Union)
+- ISO (International Organization for Standardization)
+- IEEE (Institute of Electrical and Electronic Engineers)
+- IETF (Internet Engineering Task Force)
+- ANSI (American National Standards Instituto)
+- TIA (Telecommunications Industry Association)
+- ETSI (European Telecommunications Standardas Institute)
+- CEN (Comité Europeo de Normalización)
+- AENOR (Asociación Española de Normalización)
+La entrega de esta tarea se realizará vía Moodle y mediante un documento en pdf y con
+el siguiente formato de nombre:
+Actividad3_Nombre_Apellido1_Apellido2.pdf
+Ejemplo:
+Actividad3_Hadriel_Fernando_Quintero_Ceballos.pdf
