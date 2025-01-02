@@ -1,0 +1,41 @@
+Conversión a binario
+Las direcciones IP no son más que una forma de agrupar 4 bytes en forma de cuartetos de
+números decimales, cada byte va desde el valor 0 al 255 ya que es el valor máximo (2^8).
+1- Sabiendo esto, rellenar la siguiente tabla:
+Clase IP
+ Rango
+ Número de
+ Número de
+ Máscara
+redes
+ estaciones
+0.0.0.0
+A
+127.255.255.255
+128.0.0.0
+B
+191.255.255.255
+192.0.0.0
+C
+223.255.255.255
+2- De la siguiente tabla:
+- Pasar a binario las direcciones IP límite que denotan el tipo de una IP.
+- Marcar el número de bits que se destinan para cada parte (Red/host).
+- Hacer la operación AND entre la IP y la máscara correspondiente de cada IP.
+- El valor del campo son los bits que indican que tipo es la IP, márcalos como se corresponda.
+ClaseA
+B
+C
+IP
+Mínimo:
+Máximo:
+Mínimo:
+Máximo:
+Mínimo:
+Máximo:
+Valor del campo
+La entrega de esta tarea se realizará vía Moodle y mediante un documento en pdf y con
+el siguiente formato de nombre:
+Actividad9_Nombre_Apellido1_Apellido2.pdf
+Ejemplo:
+Actividad9_Hadriel_Fernando_Quintero_Ceballos.pdf
