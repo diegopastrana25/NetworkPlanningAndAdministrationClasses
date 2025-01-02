@@ -1,0 +1,17 @@
+ACTIVIDAD 6
+Fibra óptica
+Para esta práctica necesitaremos 3 ordenadores, 1 router, 1 switch y 1 servidor Web
+y para su conexión usaremos cable de fibra óptica.
+Las IPs serán estáticas para un mejor manejo.
+Primero cambiaremos las interfaces de Ethernet de cable UTP por interfaces de
+Ethernet de Fibra Óptica a cada uno de los dispositivos.
+Una vez realizado esto establecer la IP al servidor web
+Asignar IP al router
+Asignar IP a cada uno de los equipos finales
+Una vez realizadas las configuraciones procederemos a interconectar cada uno de los
+dispositivos con fibra óptica. Para ello deberemos elegir el tipo de cable correcto
+correspondiente
+Si hemos interconectado todos los dispositivos, podemos hacer un ping entre los
+terminales para comprobar que efectivamente está todo conectado.
+Si efectivamente hay conectividad entre los equipos, es lógico que podamos acceder a
+la web que tenemos en nuestro servidor
