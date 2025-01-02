@@ -1,0 +1,8 @@
+ACTIVIDAD 12
+Redes
+A partir de la siguiente red:
+Se pide:
+1- Identificar cada una de las redes a las que pertenece cada máquina, el tipo de IP, las
+correspondientes máscaras y, también, el número IPs que sobran por red.
+2- Identificar los correspondientes gateways y difusión de cada una de las redes.
+3- Indicar cuántos hosts podrían poner en cada una de las redes, aparte de los que ya están.
