@@ -1,0 +1,43 @@
+ACTIVIDAD 19
+Configuración de un Switch
+Hasta la fecha hemos visto cómo utilizar los switches para poder crear redes, pero no hemos
+alcanzado a hacer uso de su máxima potencia.
+En esta actividad veremos cómo podemos sacarle más partido a este tipo de dispositivo y
+mejorar la estructura de una red.
+Antes de empezar a trabajar vamos a investigar un poco los componentes necesarios para
+poder realizar las configuraciones que queremos.
+1- Explicar (con nuestras palabras) los siguientes conceptos:
+
+
+
+
+
+RS - 232.
+Serial port.
+Puerto Consolas.
+VLAN
+CLI
+Una vez tenemos claros estos conceptos vamos a intentar realizar la siguiente conexión de red.
+Vamos a conectar un Switch a un terminal mediante el puerto serie y el puerto consola para
+realizar una configuración estándar. Para ello simplemente tenemos que conectar el equipo al
+switch de la siguiente manera:
+Esta es la forma más común para poder entrar al panel de configuración de un switch de cisco.
+Los comandos que podemos emplear los que podemos ver en el archivo “Comandos Básicos de
+un Switch” en la sección de “Recursos”. No obstante, en el packet tracer podemos acceder al
+CLI de forma que para configurar un switch no necesitamos ningún equipo que nos haga las
+veces de terminal.
+2- Realizar las siguientes configuraciones básicas para el switch:
+
+ Ponerle un nombre: “Moria”
+
+ Ponerle una contraseña: “Amigo”
+
+ Configurar un mensaje restrictivo a personas ajenas: “Di amigo, y entra”
+Una vez hemos visto las configuraciones básicas de un Switch vamos a proceder a realizar una
+de las configuraciones más importantes que le da el mejor uso al dispositivo.
+3- Configurar dos VLANs siguiendo el tutorial del enlace “Tutorial - Como Crear y Configurar
+una VLAN Cisco Packet Tracer - Cisco CCNA” en la sección de “Recursos”. En esta ocasión
+trabajaremos directamente con el CLI.
+NOTA: Para que la configuración se guarde, debemos usar el comando write para que se
+almacene lo que hayamos hecho. Al terminal deberemos mandar el fichero de configuración
+del Switch generado.
