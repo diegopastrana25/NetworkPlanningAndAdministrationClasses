@@ -1,0 +1,24 @@
+Ejercicio Práctico: Análisis de los Formatos de Trama a Nivel de Enlace
+Objetivo: Entender y analizar los componentes y la estructura de las tramas en diferentes protocolos de nivel de enlace de datos.
+
+Recursos Necesarios:
+
+Acceso a material teórico sobre Ethernet, PPP, y Frame Relay.
+Un analizador de protocolos como Wireshark.
+Acceso a una red donde se pueda capturar tráfico, preferiblemente en un entorno controlado o de laboratorio.
+Parte 1: Investigación Teórica
+
+Estudio de formatos de trama:
+Investiga y documenta la estructura de las tramas para Ethernet, PPP y Frame Relay.
+Enumera y explica los campos que componen cada tipo de trama, tales como direcciones, tipo de control, datos, y campos de verificación de errores.
+Parte 2: Captura y Análisis de Tramas
+
+Configuración del entorno de captura:
+
+Configura Wireshark en un dispositivo dentro de la red.
+Realiza una captura de tráfico durante un breve período, o utiliza una captura de tráfico previamente guardada que contenga ejemplos de tramas Ethernet, PPP y, si es posible, Frame Relay.
+Análisis de las tramas capturadas:
+
+Utiliza Wireshark para filtrar y examinar las tramas de cada tipo.
+Identifica y anota los diferentes campos de las tramas capturadas, comparándolos con la teoría estudiada en la Parte 1.
+Si es posible, observa cómo se manejan situaciones como errores de transmisión o control de flujo en las tramas capturadas.
