@@ -1,0 +1,9 @@
+ACTIVIDADTrunking
+21
+Una de las configuraciones típicas de un router es establecer el trunk para que dos switches
+puedan compartir la información de sus VLAN y puedan estar conectados de forma que una
+misma VLAN puede estar en dos switches diferentes, tal y como podemos ver en la siguiente
+imagen:
+Con la siguiente tabla de direcciones:
+Esta actividad es completamente guiada (ver enlace “Tutorial actividad 21” en la sección de
+“Recursos”) y nos sirve para aprender a realizar una correcta configuración de las VLAN.
