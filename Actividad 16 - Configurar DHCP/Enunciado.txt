@@ -1,0 +1,39 @@
+ACTIVIDAD 16
+Configurar DHCP
+DHCP es un servicio que permite asignación de IPs a host de forma automática y sin repetición
+de forma que podemos ahorrarnos todo el proceso de poner IPs manuales.
+¿Cómo configurar un Servidor DHCP en Packet Tracer?
+Después de añadir un servidor “Server-PT”, ir a la pestaña “Services” y seleccionar DHCP para
+configurar el protocolo:
+Configurar DCHP:
+1 - Activar el servicio.
+2 - Ponerle nombre si se desea modificar el que viene por defecto.
+3 - Asignar la dirección IP con la cual empezará a asignar a los equipos el protocolo.
+4 - Asignar máscara.
+5 - Determinar el número máximo de equipos para asignar IPs.
+Configurar IP del servidor:
+Ir a pestaña “Desktop” y seleccionar “IP Configuration”
+1 - Elegir opción “Static”.
+2 - Asignar IP.
+3 - Asignar máscara.
+¿Cómo configurar un Servidor DHCP con un router en Packet Tracer?
+Después de añadir un router, ir a la pestaña “CLI” para configurar el DHCP.
+Para poder iniciar la configuración seguir los siguientes pasos:
+1- Darle al botón de “ENTRAR” para empezar con la configuración.
+2- Escribir el comando “enable” para activar el modo de configuración.
+3- Escribir el comando “configure terminal” para empezar la configuración.
+A partir de aquí disponemos de los siguientes comandos de configuración:
+ip dhcp excluded-address: configurar rango de IPs que serán excluidas del direccionamiento.
+Ejemplo: ip dhcp excluded-address 172.10.10.200 172.10.10.210
+ip dhcp pool “Nombre del protocolo”: asigna nombre al ámbito de direccionamiento.
+Ejemplo: ip dhcp pool DHCP_Router
+network “ID de la red” “Máscara”: ámbito de la red.
+Ejemplo: network 172.10.0.0 255.255.0.0
+default-router “IP puerta de enlace”: asignar puerta de enlace.
+Ejemplo: default-router 172.10.0.1
+dns-server “IP DNS”: Ip del servidor DNS simulado que utilizarán los hosts.
+Ejemplo: dns-server 8.8.8.8
+exit: para finalizar con la configuración.
+Se pide:
+1- Configurar un servicio DHCP mediante un servidor.
+2- Configurar un servicio DHCP mediante un router.
