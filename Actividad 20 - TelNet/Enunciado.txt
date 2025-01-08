@@ -1,0 +1,18 @@
+ACTIVIDAD 20
+TelNet
+Para configurar un switch hemos visto que podemos hacerlo mediante el serial port con la
+conexión a un equipo y mediante un terminal. No obstante, hay otra forma por la que
+podemos configurar un switch y es mediante TelNet (Telecomunication Network).
+Seguir el siguiente tutorial para ello.
+En primer lugar, creamos la topología como la siguiente:
+Acceder al switch mediante CLI, en este caso como estamos en Packet Tracer lo haremos
+directamente desde la interfaz del switch, pero en un caso real deberemos acceder a él
+mediante un pc conectado al puerto consola del switch.
+Establecer una IP de gestión al switch en la vlan1 con los siguientes comandos:
+A continuación, configurar el número de equipos que se conectarán por telnet, establecer el
+tipo de conexión (en este caso login), asignar una contraseña, dar permisos y encriptar
+contraseña:
+Asignar a cada PC de la VLAN1 IPs dentro de la misma red para poder acceder remotamente
+desde cualquiera de ellos a nuestro switch con TelNet.
+Después de seguir los pasos:
+- Configurar la VLAN2 desde la conexión realizada por TelNet
