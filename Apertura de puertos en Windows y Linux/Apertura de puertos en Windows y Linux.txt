@@ -1,0 +1,71 @@
+Ejercicio para Apertura de Puertos en Windows y Linux
+Objetivo
+El objetivo de este ejercicio es aprender a abrir puertos en un sistema operativo Windows y en un sistema operativo basado en Linux utilizando iptables. Este conocimiento es fundamental para la configuración de firewalls y la administración de redes.
+
+Parte 1: Apertura de Puertos en Windows
+Requisitos
+Sistema operativo Windows (Windows 10 o posterior)
+Privilegios de administrador
+Pasos
+Abrir el Firewall de Windows con Seguridad Avanzada:
+
+Presiona Win + R, escribe wf.msc y presiona Enter.
+Crear una Nueva Regla de Entrada:
+
+En el panel izquierdo, selecciona "Reglas de entrada".
+En el panel derecho, haz clic en "Nueva regla".
+Configurar la Nueva Regla:
+
+Selecciona "Puerto" y haz clic en "Siguiente".
+Selecciona "TCP" o "UDP" según el tipo de puerto que quieras abrir.
+Especifica el número de puerto o rango de puertos que deseas abrir y haz clic en "Siguiente".
+Selecciona "Permitir la conexión" y haz clic en "Siguiente".
+Elige cuándo aplicar esta regla (Dominio, Privado, Público) y haz clic en "Siguiente".
+Asigna un nombre a la regla y, opcionalmente, una descripción. Haz clic en "Finalizar".
+Verificación:
+
+Utiliza un comando como netstat -an | find "PORT_NUMBER" en el símbolo del sistema para verificar que el puerto está abierto.
+Ejemplo
+Si deseas abrir el puerto 8080 para tráfico TCP:
+
+Selecciona "TCP".
+Especifica el puerto "8080".
+Permite la conexión en todas las ubicaciones de red.
+Nombra la regla como "Abrir Puerto 8080".
+Parte 2: Apertura de Puertos en Linux usando iptables
+Requisitos
+Sistema operativo Linux (Ubuntu, CentOS, etc.)
+Privilegios de superusuario (root)
+Pasos
+Acceder al Terminal:
+
+Abre una terminal en tu sistema Linux.
+Verificar la Instalación de iptables:
+
+Asegúrate de que iptables esté instalado utilizando el comando iptables --version.
+Abrir el Puerto con iptables:
+
+Para abrir un puerto, se utiliza el siguiente comando:
+
+sudo iptables -A INPUT -p tcp --dport PORT_NUMBER -j ACCEPT
+Reemplaza PORT_NUMBER con el número del puerto que deseas abrir.
+
+Guardar los Cambios:
+
+En sistemas basados en Debian/Ubuntu, guarda los cambios utilizando:
+
+sudo netfilter-persistent save
+sudo netfilter-persistent reload
+En sistemas basados en RedHat/CentOS, utiliza:
+
+sudo service iptables save
+sudo service iptables restart
+Verificación:
+
+Utiliza un comando como netstat -tuln | grep PORT_NUMBER para verificar que el puerto está abierto.
+Ejemplo
+Para abrir el puerto 8080 para tráfico TCP:
+
+sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+sudo netfilter-persistent save
+sudo netfilter-persistent reload
