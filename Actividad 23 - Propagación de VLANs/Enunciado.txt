@@ -1,0 +1,11 @@
+ACTIVIDAD 23
+Propagación de VLANs
+Se tiene el siguiente esquema lógico que pertenece a dos edificios diferentes.
+Se pide la siguiente configuración:
+1- Los switches deben tener los nombres SW1 y SW2.
+2- Las VLANs deben tener los siguientes nombres: ADMINISTRACIÓN para la VLAN100 y
+SEGURIDAD para la VLAN101.
+3- Los switches deben tener contraseña de acceso a la configuración y acceso mediante TelNet.
+4- Cada switch tendrá la primera IP de la correspondiente VLAN.
+5- Dividir la interfaz del router para que haya conexión a este por parte de la red.
+6- Elegir las interfaces que quieran utilizar para cada VLAN y comprobar su funcionamiento.
