@@ -1,0 +1,16 @@
+ACTIVIDAD 22
+VLAN con router
+Como hemos visto, el Trunk nos permite conectar varias VLAN de diferentes switches de forma
+que, aunque estén separadas estas están unidas por el Trunk.
+En la actividad previa vimos cómo de esta forma dos switches hacían las veces de puente entre
+las redes virtuales. En esta nueva actividad vamos a ver cómo podemos establecer una
+correcta red con las correspondientes VLANs montadas.
+PARTE 1:
+Antes de llevar a cabo la actividad, realizar el ejemplo que se encuentra en la sección
+“Recursos” en el enlace “Router on a stick”.
+PARTE 2:
+Montar la red con VLAN, pero sin el trunk. De forma que es necesario que tiremos dos cables
+para que se pueda conectar el switch al router.
+PARTE 3:
+Configurar correctamente el trunk para que la conexión pueda pasar por el mismo cable al
+router.
