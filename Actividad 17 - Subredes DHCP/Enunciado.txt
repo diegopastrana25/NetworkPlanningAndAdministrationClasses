@@ -1,0 +1,7 @@
+ACTIVIDAD 17
+Subredes DHCP
+Seguir el tutorial, que está adjunto a la actividad, de cómo diseñar y planificar las diferentes
+subredes y modificarlo para que se pueda hacer mediante un servidor DHCP que genere el
+rango de IPs válidas dentro de cada subred.
+El esquema es similar, pero en cada una de las subredes deberá haber un servidor que permita
+realizar este servicio.
