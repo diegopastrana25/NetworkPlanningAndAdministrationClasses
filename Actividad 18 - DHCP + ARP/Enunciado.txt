@@ -1,0 +1,11 @@
+ACTIVIDAD 18
+DHCP + ARP
+A partir de la siguiente red:
+Se pide:
+- Configurar el reparto dinámico de IPs desde el servidor de DHCP, siendo la ID de la red 192.
+168.1.0.
+- Comprobar las tablas de ARP (ver “Vídeo explicativo – ARP” en “Recursos”) de cada equipo
+tras haber hecho ping de:
+- PC0 a PC2
+- PC1 a PC2
+- PC1 a PC0
