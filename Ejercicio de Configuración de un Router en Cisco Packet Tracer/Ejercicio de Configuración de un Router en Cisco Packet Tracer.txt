@@ -1,0 +1,88 @@
+Ejercicio de Configuración de un Router en Cisco Packet Tracer
+Objetivo
+El objetivo de este ejercicio es configurar un router en Cisco Packet Tracer para permitir la comunicación entre dos redes diferentes. Aprenderás a configurar interfaces, rutas estáticas y verificar la conectividad.
+
+Referencias:
+
+https://ccnadesdecero.es/configuracion-basica-router/
+
+https://ccnadesdecero.es/como-configurar-router-cisco/
+
+Requisitos
+Cisco Packet Tracer instalado en tu ordenador.
+Conocimientos básicos de redes y comandos de configuración de routers.
+Topología de Red
+Crea la siguiente topología de red en Cisco Packet Tracer:
+
+Dispositivos:
+
+1 Router
+2 Switches
+4 PCs (2 conectados a cada switch)
+Conexiones:
+
+Conecta el Router a cada Switch utilizando cables Ethernet.
+Conecta cada PC a su respectivo Switch utilizando cables Ethernet.
+Dirección IP
+Configura las siguientes direcciones IP en los dispositivos:
+
+Router:
+
+Interface GigabitEthernet0/0: 192.168.1.1/24
+Interface GigabitEthernet0/1: 192.168.2.1/24
+PCs:
+
+PC1 (conectado al Switch 1): 192.168.1.2/24, Gateway: 192.168.1.1
+PC2 (conectado al Switch 1): 192.168.1.3/24, Gateway: 192.168.1.1
+PC3 (conectado al Switch 2): 192.168.2.2/24, Gateway: 192.168.2.1
+PC4 (conectado al Switch 2): 192.168.2.3/24, Gateway: 192.168.2.1
+Pasos para Configurar el Router
+Acceder a la CLI del Router:
+
+Haz clic en el Router en Cisco Packet Tracer.
+Selecciona la pestaña "CLI".
+Entrar en el Modo de Configuración Global:
+
+Router> enable
+Router# configure terminal
+Configurar las Interfaces:
+
+Interface GigabitEthernet0/0:
+
+Router(config)# interface GigabitEthernet0/0
+Router(config-if)# ip address 192.168.1.1 255.255.255.0
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Interface GigabitEthernet0/1:
+
+Router(config)# interface GigabitEthernet0/1
+Router(config-if)# ip address 192.168.2.1 255.255.255.0
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Configurar la Tabla de Rutas (si es necesario): Este paso no es necesario si ambas redes están directamente conectadas al router. Sin embargo, si hay más routers en la topología, puedes añadir rutas estáticas.
+
+
+Router(config)# ip route 192.168.2.0 255.255.255.0 GigabitEthernet0/1
+Router(config)# ip route 192.168.1.0 255.255.255.0 GigabitEthernet0/0
+Guardar la Configuración:
+
+Router(config)# exit
+Router# write memory
+Configuración de los PCs
+Asignar Direcciones IP a los PCs:
+Haz clic en cada PC, selecciona la pestaña "Desktop" y luego "IP Configuration".
+Introduce las direcciones IP y las puertas de enlace (gateway) según se indica en la sección de Dirección IP.
+Verificación
+Verificar Conectividad:
+
+Desde el escritorio de un PC, abre la aplicación "Command Prompt".
+Ejecuta el comando ping para verificar la conectividad entre los PCs de diferentes redes.
+Ejemplo: Desde PC1 (192.168.1.2) ejecuta:
+
+
+ping 192.168.2.2
+Verificar la Tabla de Rutas en el Router:
+
+En la CLI del Router, ejecuta el siguiente comando para ver la tabla de rutas:
+
+Router# show ip route
