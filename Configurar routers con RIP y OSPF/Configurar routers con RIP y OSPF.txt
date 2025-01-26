@@ -1,0 +1,173 @@
+RIP (Routing Information Protocol)
+Definición
+RIP (Routing Information Protocol) es un protocolo de enrutamiento interior (IGP) utilizado para facilitar la comunicación entre routers dentro de una red autónoma o una única entidad administrativa. Es uno de los protocolos de enrutamiento más antiguos y es fácil de configurar y entender.
+
+Características
+Vector de Distancia: RIP utiliza el algoritmo de vector de distancia para determinar la mejor ruta hacia una red de destino.
+Metric: La métrica utilizada por RIP es la "cantidad de saltos" (hop count). Cada salto representa el paso de un router al siguiente. El máximo número de saltos permitido es 15, lo que limita el tamaño de la red que RIP puede manejar.
+Actualizaciones Periódicas: RIP envía actualizaciones de la tabla de enrutamiento a intervalos regulares (normalmente cada 30 segundos) a todos sus vecinos.
+Versiones: Existen dos versiones de RIP:
+RIP v1: No soporta subredes y utiliza enrutamiento basado en clases.
+RIP v2: Soporta subredes y el uso de máscaras de subred de longitud variable (VLSM).
+Ventajas y Desventajas
+Ventajas:
+
+Simplicidad en la configuración.
+Amplia disponibilidad y soporte en múltiples dispositivos de red.
+Desventajas:
+
+Escalabilidad limitada debido al límite de 15 saltos.
+Convergencia lenta.
+Utiliza ancho de banda innecesariamente debido a las actualizaciones periódicas.
+OSPF (Open Shortest Path First)
+Definición
+OSPF (Open Shortest Path First) es un protocolo de enrutamiento interior (IGP) basado en el estado de enlace, utilizado para distribuir información de enrutamiento dentro de una red autónoma. Fue desarrollado como una mejora a RIP para proporcionar una mayor eficiencia y escalabilidad.
+
+Características
+Estado de Enlace: OSPF utiliza el algoritmo de estado de enlace y el algoritmo de Dijkstra para calcular la ruta más corta a cada red de destino.
+Áreas: OSPF puede dividir una red grande en áreas más pequeñas para optimizar el enrutamiento y reducir la sobrecarga. Cada área se conecta a un área central llamada área 0 (área de backbone).
+Convergencia Rápida: OSPF tiene una rápida convergencia debido a su método de actualizar solo los cambios en la red en lugar de enviar actualizaciones completas periódicamente.
+Soporte para VLSM: OSPF soporta máscaras de subred de longitud variable (VLSM), lo que permite una asignación más eficiente de direcciones IP.
+Autenticación: OSPF puede usar autenticación para asegurar las actualizaciones de enrutamiento.
+Ventajas y Desventajas
+Ventajas:
+
+Escalabilidad y eficiencia en grandes redes.
+Convergencia rápida.
+Soporte para VLSM y subnetting.
+Mayor flexibilidad y control en la configuración.
+Desventajas:
+
+Complejidad en la configuración y el mantenimiento.
+Mayor uso de memoria y CPU en los routers debido a la base de datos de estado de enlace.
+Comparación Entre RIP y OSPF
+Algoritmo de Enrutamiento:
+
+RIP: Vector de distancia.
+OSPF: Estado de enlace.
+Métrica:
+
+RIP: Cantidad de saltos.
+OSPF: Costo basado en el ancho de banda de los enlaces.
+Convergencia:
+
+RIP: Lenta debido a las actualizaciones periódicas.
+OSPF: Rápida debido a la actualización inmediata de los cambios.
+Escalabilidad:
+
+RIP: Limitada a 15 saltos.
+OSPF: Alta, adecuada para redes grandes.
+Actualizaciones de Enrutamiento:
+
+RIP: Envia actualizaciones completas periódicamente.
+OSPF: Envía solo los cambios cuando ocurren.
+División en Áreas:
+
+RIP: No soporta.
+OSPF: Soporta, lo que mejora la eficiencia en grandes redes.
+
+Ejercicio de Configuración de un Router con RIP en Cisco Packet Tracer
+Objetivo
+Configurar el protocolo de enrutamiento RIP en un router en Cisco Packet Tracer para permitir la comunicación entre múltiples redes.
+
+Topología de Red
+Crea la siguiente topología de red en Cisco Packet Tracer:
+
+Dispositivos:
+
+3 Routers
+3 Switches
+6 PCs (2 conectados a cada switch)
+Conexiones:
+
+Conecta cada Router a un Switch.
+Conecta cada PC a su respectivo Switch utilizando cables Ethernet.
+Conecta los Routers entre sí en un triángulo utilizando cables seriales.
+Dirección IP
+Configura las siguientes direcciones IP en los dispositivos:
+
+Router 1:
+
+Interface GigabitEthernet0/0: 192.168.1.1/24
+Interface Serial0/0/0: 10.0.0.1/30 (conexión a Router 2)
+Interface Serial0/0/1: 10.0.0.5/30 (conexión a Router 3)
+Router 2:
+
+Interface GigabitEthernet0/0: 192.168.2.1/24
+Interface Serial0/0/0: 10.0.0.2/30 (conexión a Router 1)
+Interface Serial0/0/1: 10.0.0.9/30 (conexión a Router 3)
+Router 3:
+
+Interface GigabitEthernet0/0: 192.168.3.1/24
+Interface Serial0/0/0: 10.0.0.6/30 (conexión a Router 1)
+Interface Serial0/0/1: 10.0.0.10/30 (conexión a Router 2)
+Pasos para Configurar RIP
+Configurar Interfaces en los Routers: Repite estos pasos para cada router, ajustando las direcciones IP según corresponda.
+
+Router> enable
+Router# configure terminal
+Router(config)# interface GigabitEthernet0/0
+Router(config-if)# ip address 192.168.X.1 255.255.255.0
+Router(config-if)# no shutdown
+Router(config-if)# exit
+
+Router(config)# interface Serial0/0/0
+Router(config-if)# ip address 10.0.0.Y 255.255.255.252
+Router(config-if)# clock rate 64000
+Router(config-if)# no shutdown
+Router(config-if)# exit
+
+Router(config)# interface Serial0/0/1
+Router(config-if)# ip address 10.0.0.Z 255.255.255.252
+Router(config-if)# clock rate 64000
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Configurar RIP en los Routers:
+
+Router(config)# router rip
+Router(config-router)# version 2
+Router(config-router)# network 192.168.X.0
+Router(config-router)# network 10.0.0.0
+Router(config-router)# exit
+Repite estos comandos para cada router, ajustando las direcciones de red según corresponda.
+
+Verificar la Configuración:
+
+Utiliza el siguiente comando para verificar las rutas aprendidas a través de RIP:
+
+Router# show ip route
+Verificar Conectividad:
+
+Desde cualquier PC, realiza pings a otros PCs en diferentes subredes para verificar la conectividad.
+Ejercicio de Configuración de un Router con OSPF en Cisco Packet Tracer
+Objetivo
+Configurar el protocolo de enrutamiento OSPF en un router en Cisco Packet Tracer para permitir la comunicación entre múltiples redes.
+
+Topología de Red
+Utiliza la misma topología de red del ejercicio anterior.
+
+Dirección IP
+Utiliza las mismas direcciones IP del ejercicio anterior.
+
+Pasos para Configurar OSPF
+Configurar Interfaces en los Routers: Repite estos pasos para cada router, ajustando las direcciones IP según corresponda (igual que en el ejercicio anterior).
+
+Configurar OSPF en los Routers:
+
+
+Router> enable
+Router# configure terminal
+Router(config)# router ospf 1
+Router(config-router)# network 192.168.X.0 0.0.0.255 area 0
+Router(config-router)# network 10.0.0.0 0.0.0.3 area 0
+Router(config-router)# exit
+Repite estos comandos para cada router, ajustando las direcciones de red según corresponda.
+
+Verificar la Configuración:
+
+Utiliza el siguiente comando para verificar las rutas aprendidas a través de OSPF:
+
+Router# show ip route ospf
+Verificar Conectividad:
+
+Desde cualquier PC, realiza pings a otros PCs en diferentes subredes para verificar la conectividad.
