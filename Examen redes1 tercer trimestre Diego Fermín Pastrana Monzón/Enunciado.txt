@@ -1,0 +1,45 @@
+Pregunta 1: Ejercicio de subnetting (1 punto).
+
+Subred: 192.168.10.0/24
+
+a)       Determinar las subredes necesarias para que se puedan conectar 16 equipos en 7 subredes.
+
+b)      Determinar cuál es la máscara de las subredes.
+
+c)       Indicar cómo, a partir de una IP de un host, podríamos determinar la IP de la red, utilizando la máscara.
+
+d)      Indicar, las subredes creadas, así como las IP de los equipos. Además, indicar la IP de difusión de cada subred.
+
+Pregunta 2: Ejercicio de VLAN sencillo (1 punto)
+
+Crear dos VLAN, 100 y 200, con un Switch y conectar dos equipos, uno a cada VLAN. Utilizar la IP 192.168.10.0/24 y crear dos subredes, una para cada VLAN.
+
+Pregunta 3: Telnet (1 punto)
+
+Configurar los equipos del ejercicio anterior para conectarse a los switches por Telnet.
+
+Pregunta 4: Configuración de VLANs en un Switch con subredes (5 puntos)
+
+Tienes dos switches de 24 puertos y necesitas configurar las siguientes VLANs:
+
+VLAN 10: Red de Ventas – 2 equipos
+
+VLAN 20: Red de Ingeniería – 2 equipos
+
+VLAN 30: Red de Administración – 2 equipos
+
+Subred 1: 192.168.10.0/24 (VLAN 10)
+
+Subred 2: 192.168.20.0/24 (VLAN 20)
+
+Subred 3: 192.168.30.0/24 (VLAN 30)
+
+a)       Proporciona los comandos necesarios para crear estas VLANs con dos switches:
+
+a.       SW1: Host 1 de VLAN 10, Host 2 de VLAN 20, Host 1 y 2 de VLAN 30
+
+b.       SW2: Host 2 de VLAN 10, Host 1 de VLAN 20.
+
+b)      Asigna los puertos 1-8 a la VLAN 10, los puertos 9-16 a la VLAN 20, y los puertos 17-24 a la VLAN 30.
+
+c)       Muestra cómo configurar un puerto de enlace troncal para permitir el tráfico de todas las VLANs.
