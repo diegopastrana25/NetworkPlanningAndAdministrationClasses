@@ -1,0 +1,1 @@
+Realizar el ejercicio propuesto: https://ccnadesdecero.es/enrutamiento-entre-vlan-switches-capa-3/
