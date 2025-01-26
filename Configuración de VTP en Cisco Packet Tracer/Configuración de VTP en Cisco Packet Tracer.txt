@@ -1,0 +1,96 @@
+Ejercicio Práctico: Configuración de VTP en Cisco Packet Tracer
+Objetivo: Aprender a configurar y gestionar VLANs utilizando el protocolo VTP en un entorno de red simulado.
+
+Recursos Necesarios:
+
+Cisco Packet Tracer instalado en tu computadora.
+Conocimientos básicos sobre configuración de switches y VLANs.
+Escenario de Red:
+
+La red consiste en tres switches (Switch1, Switch2, Switch3) que están interconectados a través de enlaces troncales.
+Hay tres departamentos en la organización: Administración, Ventas y Soporte Técnico, cada uno asignado a su propia VLAN.
+Parte 1: Diseño de la Red
+
+Construcción de la red:
+
+Abre Cisco Packet Tracer y coloca tres switches.
+Conecta los switches entre sí utilizando conexiones de tipo Ethernet (selecciona cables de conexión cruzada).
+Configuración inicial de los switches:
+
+Asigna direcciones IP estáticas a la interfaz de gestión de cada switch.
+Establece los nombres de los dispositivos como Switch1, Switch2 y Switch3.
+Configura las contraseñas para el acceso de consola y VTY en cada switch.
+Parte 2: Configuración de VTP
+
+Establecimiento del modo VTP y configuración:
+
+Designa a Switch1 como el servidor VTP.
+Configura Switch2 y Switch3 como clientes VTP.
+Asegúrate de configurar el mismo dominio VTP y la misma contraseña VTP en todos los switches.
+
+Switch1(config)# vtp mode server
+Switch1(config)# vtp domain ASIR
+Switch1(config)# vtp password example
+
+Switch2(config)# vtp mode client
+Switch2(config)# vtp domain ASIR
+Switch2(config)# vtp password example
+
+Switch3(config)# vtp mode client
+Switch3(config)# vtp domain ASIR
+Switch3(config)# vtp password example
+Creación de VLANs en el servidor VTP (Switch1):
+
+Crea VLAN 10 (Administración), VLAN 20 (Ventas), y VLAN 30 (Soporte Técnico).
+Verifica que estas VLANs se propaguen a Switch2 y Switch3.
+
+Switch1(config)# vlan 10
+Switch1(config)# name Administracion
+Switch1(config)# vlan 20
+Switch1(config)# name Ventas
+Switch1(config)# vlan 30
+Switch1(config)# name Soporte
+Parte 3: Verificación y Pruebas
+
+Verificación de la propagación de VLANs:
+
+Utiliza el comando show vtp status y show vlan brief en Switch2 y Switch3 para verificar que las VLANs se han propagado correctamente.
+Configuración de los puertos de acceso y troncales:
+
+Configura los puertos específicos en cada switch para las VLANs adecuadas.
+Asegúrate de que los enlaces entre switches estén configurados como troncales.
+Prueba de conectividad:
+
+Coloca PCs en cada VLAN en Packet Tracer.
+Realiza pings entre PCs dentro de la misma VLAN para verificar la conectividad.
+Parte Adicional: Configuración del Modo Transparente en VTP
+Objetivo: Configurar un switch en modo transparente VTP para observar cómo este maneja las actualizaciones de VTP sin modificar su propia configuración de VLAN.
+
+Recursos Necesarios:
+
+Cisco Packet Tracer con la red ya configurada según los pasos anteriores.
+Configuración y Observación:
+
+Selecciona un Switch para el Modo Transparente:
+
+Puedes elegir, por ejemplo, Switch3 para configurarlo en modo transparente. Esto podría simular un escenario donde Switch3 está en una ubicación remota con requisitos de VLAN únicos que no deben ser alterados por el servidor VTP principal.
+Configuración del Modo Transparente:
+
+Accede a la consola de configuración de Switch3 y cambia su modo VTP a transparente.
+
+Switch3(config)# vtp mode transparent
+Switch3(config)# vtp domain ASIR
+Switch3(config)# vtp password example
+Creación de VLAN Local en el Modo Transparente:
+
+Crea una VLAN adicional en Switch3 que no exista en el servidor VTP para demostrar la independencia de su base de datos VLAN.
+
+Switch3(config)# vlan 40
+Switch3(config)# name RecursosHumanos
+Verificación de la Propagación de VLANs:
+
+Utiliza los comandos show vtp status y show vlan brief en Switch3 para verificar que el switch en modo transparente no ha recibido nuevas VLANs del servidor después de su cambio, pero aún reenvía los anuncios VTP a otros switches.
+Comprueba que la VLAN 40 solo existe en Switch3 y no se ha propagado a otros switches.
+Análisis de Comportamiento:
+
+Observa cómo las actualizaciones de VTP desde el servidor (Switch1) y cliente (Switch2) son manejadas por Switch3. A pesar de recibir las actualizaciones, Switch3 no debería aplicar cambios a su propia base de datos VLAN, excepto para reenviar estas actualizaciones a otros switches.
