@@ -1,0 +1,1 @@
+Crea una simulación, utilizando Cisco Packet Tracer, de una red 172.20.0.0 con cuatro equipos que se conecten con DHCP. Puedes utilizar un router o un servidor. Ten en cuenta el tipo de la IP de la red.
