@@ -1,0 +1,35 @@
+Se pretende hacer la instalación de red de un gimnasio ultramoderno en que las máquinas tienen incorparado un pc con acceso a internet.
+
+La red tiene una arquitectura como se describe a continuación:
+
+Hay un total de 3 redes:
+
+RED 1 – 192.168.10.0
+RED 2 – 192.168.20.0
+RED 3 – 192.168.30.0
+En la RED 1 hay:
+
+3 equipos del personal de administración conectados por cable.
+1 servidor (con la IP 192.168.10.2) del centro.
+En la RED 2 hay:
+
+5 bicicletas estáticas para su sala de spinning.
+En la RED 3 hay:
+
+5 máquinas que corresponden al resto de aparatos del gimnasio.
+A tener en cuenta:
+
+La puerta de enlace, para todas la redes, será la IP 1.
+La máscara, para todas las redes, será 255.255.255.0.
+Todas las redes son visibles entre sí.
+Se pide:
+
+1. La simulación de la arquitectura hecha con packet tracer, teniendo en cuenta que el cliente quiere la RED 2 montada en BUS. (4 puntos). 
+
+2. La correcta conectividad entre los diferentes dispositivos, haciendo uso del ping. (3 puntos).
+
+3. ¿Qué topologías has utilizado en la RED 1 y RED 3? ¿Por qué? (2 puntos).
+
+4. ¿Qué dispositivos de red has usado? ¿Por qué? (1 punto).
+
+La entrega consistirá en un archivo comprimido que contendrá un archivo pdf con las respuestas y capturas necesarias y un archivo pkt con la arquitectura. Y con el siguiente formato de nombre: P01_Parcial2_T1_PAR_Nombre_Apellido1_Apellido2.rar
