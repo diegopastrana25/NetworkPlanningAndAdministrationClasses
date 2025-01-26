@@ -1,0 +1,15 @@
+Una empresa pretende crear una red con la siguiente configuración:
+
+    Subred 1: Recursos Humanos.
+    Subred 2: Administración.
+    Subred 3: Atención al cliente.
+
+Cada una de las subredes dispone de los siguientes equipos:
+
+    Subred 1: 10 equipos.
+    Subred 2: 15 equipos.
+    Subred 3: 30 equipos.
+
+    Desarrollar el cálculo del direccionamiento IP, mediante subred, calculando la adaptación de la máscara, el rango de IPs válidas y las direcciones de ID de red y difusión para cada subred (2,5 puntos).
+
+    Implementar, a nivel lógico, la simulación en Cisco Packet Tracker, simulando 3 equipos por subred (no es necesario los 10, 15 y 30), verificando las interconexiones entre sí. Conectar el primer equipo de la primera red con WIFI con la contraseña PaSSW0rD1234 y todas las conexiones deben ser de fibra. Explicar, en el nivel físico, cómo quedaría el rack y cuáles son los dispositivos, identificando cada uno de ellos y las interfaces de conexión (2,5 puntos).
