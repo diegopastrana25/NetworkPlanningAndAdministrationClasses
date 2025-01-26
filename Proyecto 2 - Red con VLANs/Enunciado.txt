@@ -1,0 +1,8 @@
+PROYECTO 2
+Red con VLANs
+Una determinada empresa organiza la red de sus tres departamentos de la siguiente manera:
+- Cada color se corresponde con una VLAN de forma que los equipos que están marcados del
+mismo color deberían poder comunicarse entre sí.
+- Las IPs de cada red están marcadas arriba de forma que los equipos pueden tener cualquier IP
+válida dentro del rango que determina su correspondiente red.
+Se pide configurar los 4 Switches para que funcione el esquema que se propone.
