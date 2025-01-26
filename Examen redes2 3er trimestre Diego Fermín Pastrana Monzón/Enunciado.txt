@@ -1,0 +1,9 @@
+Rehacer las siguientes actividades, estableciendo, en caso de direcciones IP, los dos dígitos de tu DNI en el segundo octeto y, en el caso de puertos, los dos últimos dígitos de tu DNI con "10" delante:
+
+Configuración de VTP en Cisco Packet Tracer (2 puntos)
+Configurar routers con RIP y OSPF (2,5 puntos)
+Configuración de un router Linksys (0,5 puntos)
+Proyecto 1 - Wireshark, solo parte 1, sacar captura de paquete (1 punto)
+ACL (0,5 puntos)
+Switch Capa 3 (1 punto)
+Apertura de un puerto en Windows, sin la comprobación (0,5 puntos)
